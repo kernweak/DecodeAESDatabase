@@ -143,6 +143,7 @@ int Decryptdb() {
 		FILE * fp;
 		fopen_s(&fp, decFile, "ab+");
 		{
+
 			fwrite(pDecryptPerPageBuffer, 1, DEFAULT_PAGESIZE, fp);
 			fclose(fp);
 		}
